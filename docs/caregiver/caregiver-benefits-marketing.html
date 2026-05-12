@@ -384,8 +384,79 @@
       font-weight: 500;
     }
 
+    .freemium-table-wrap {
+      overflow-x: auto;
+      margin-top: 16px;
+      margin-bottom: 4px;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .plan-compare {
+      width: 100%;
+      min-width: 560px;
+      border-collapse: collapse;
+      font-size: 0.94rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: var(--surface);
+    }
+
+    .plan-compare caption {
+      caption-side: top;
+      text-align: left;
+      font-weight: 800;
+      color: var(--primary-dark);
+      font-size: 1rem;
+      padding: 0 0 12px 0;
+    }
+
+    .plan-compare thead th {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 800;
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .plan-compare tbody th {
+      background: linear-gradient(180deg, #fafcfd 0%, var(--surface) 100%);
+      color: var(--text-primary);
+      font-weight: 700;
+      text-align: left;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      width: 26%;
+      min-width: 140px;
+    }
+
+    .plan-compare td {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    .plan-compare tbody tr:nth-child(even) td {
+      background: rgba(214, 234, 248, 0.35);
+    }
+
+    .plan-compare .plan-muted {
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    .plan-compare .plan-cell-note {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.9em;
+      font-weight: 500;
+    }
+
     .freemium-footer {
-      margin-top: 12px;
+      margin-top: 14px;
       margin-bottom: 0;
       font-size: 0.95rem;
     }
@@ -600,13 +671,70 @@
 
         <div class="freemium-note">
           <h3>Free vs Premium — in plain language</h3>
-          <p class="freemium-intro">Essential caregiving features are <strong class="text-strong">free</strong> so you can coordinate care without a paywall on the basics. Optional subscriptions add room for larger families and heavier use.</p>
-          <ul>
-            <li><strong>Free</strong> includes shared calendar, tasks, medication tracking, real-time updates, onboarding, and a document vault (up to about <strong>50 MB</strong> total per care circle while the hub owner is on Free), with <strong>one loved one profile</strong> and up to <strong>four members per care circle</strong>. For the latest limits and plans, check the upgrade screen in the app or your store listing.</li>
-            <li><strong>Premium</strong> expands to <strong>up to four</strong> loved one profiles, <strong>unlimited</strong> members per care circle, and <strong>no document vault size cap</strong> at MVP, plus future premium enhancements as they ship. (Activity feed depth is the same as Free today; not a paid gate.)</li>
-            <li><strong>Pro</strong> matches Premium entitlements with <strong>up to eight</strong> loved one profiles for families managing many hubs.</li>
-          </ul>
-          <p class="freemium-footer">Pricing on the store may vary by region; see the in-app or store listing for current prices.</p>
+          <p class="freemium-intro">Essential caregiving features are <strong class="text-strong">free</strong> so you can coordinate care without a paywall on the basics. Optional subscriptions add room for larger families, deeper log history, simple health charts, and heavier document use. The <strong class="text-strong">hub admin</strong> (the person who set up the care hub) is the one who pays; invited family usually <strong class="text-strong">inherit that hub’s benefits</strong> on that loved one’s circle.</p>
+          <div class="freemium-table-wrap">
+            <table class="plan-compare">
+              <caption>What’s included by plan</caption>
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Free</th>
+                  <th scope="col">Premium</th>
+                  <th scope="col">Pro</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Loved one profiles <span class="plan-muted">(your account)</span></th>
+                  <td>1</td>
+                  <td>Up to 4</td>
+                  <td>Up to 8</td>
+                </tr>
+                <tr>
+                  <th scope="row">Members per care circle</th>
+                  <td>Up to 4</td>
+                  <td>Unlimited</td>
+                  <td>Unlimited</td>
+                </tr>
+                <tr>
+                  <th scope="row">Document vault <span class="plan-muted">(hubs you own)</span></th>
+                  <td>About <strong class="text-strong">50 MB</strong> per loved one</td>
+                  <td>No vault size cap</td>
+                  <td>No vault size cap</td>
+                </tr>
+                <tr>
+                  <th scope="row">Care log — notes &amp; readings</th>
+                  <td colspan="3">Logging is <strong class="text-strong">free</strong> for everyone in the circle.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Care log — <strong class="text-strong">list</strong> history filters</th>
+                  <td>Last <strong class="text-strong">3</strong> or <strong class="text-strong">7</strong> days <span class="plan-cell-note">(when the hub owner is on Free)</span></td>
+                  <td>Through about <strong class="text-strong">three months</strong> of presets in the app</td>
+                  <td>Even longer, including an <strong class="text-strong">all-time</strong> view with paging when the list grows</td>
+                </tr>
+                <tr>
+                  <th scope="row">Care log — <strong class="text-strong">health trend</strong> charts</th>
+                  <td>Not included <span class="plan-cell-note">Charts unlock when the <strong class="text-strong">hub owner</strong> upgrades.</span></td>
+                  <td>Short ranges through about <strong class="text-strong">one month</strong>, plus <strong class="text-strong">PDF export</strong></td>
+                  <td>Up to about <strong class="text-strong">six months</strong> in one view, same PDF export</td>
+                </tr>
+                <tr>
+                  <th scope="row">Calendar, tasks, meds, updates</th>
+                  <td colspan="3">Core coordination features are in the <strong class="text-strong">free</strong> plan.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Family activity feed</th>
+                  <td colspan="3">Same experience on Free and paid today — not a separate paywall.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Who pays for Premium / Pro</th>
+                  <td>—</td>
+                  <td colspan="2">The <strong class="text-strong">hub admin</strong> (care hub owner) on their account; invited members benefit on that hub.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="freemium-footer">Charts and care-log time ranges follow the <strong class="text-strong">hub owner’s</strong> plan for that loved one’s hub — not each invited member’s personal subscription. Pricing may vary by region; see the in-app or store listing for current prices.</p>
         </div>
       </div>
 
