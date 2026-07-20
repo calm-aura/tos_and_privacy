@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Panic Attack Relief Airu — deep breathing for anxiety when it actually hits. Emergency Mode from the lock screen, anxiety-type-aware techniques, teen scenarios, and pay-what-you-can pricing. No ads.">
+  <title>Panic Attack Relief Airu · Benefits</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+    :root {
+      --primary-dark: #0d0f18;
+      --primary-mid: #7fb5a0;
+      --primary-light: rgba(127, 181, 160, 0.18);
+      --accent-blush: #d4967a;
+      --accent-lavender: #9b8ec4;
+      --bg-page: #f4f2ee;
+      --surface: #ffffff;
+      --text-primary: #1a1c24;
+      --text-secondary: #4a4e5c;
+      --text-muted: #8a8f9c;
+      --border: #e2dfd8;
+      --success: #7fb5a0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', system-ui, sans-serif;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background: linear-gradient(145deg, #0d0f18 0%, #1c1f2e 45%, #2a3540 100%);
+      padding: 40px 20px;
+      font-size: 1.05rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: var(--surface);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(13, 15, 24, 0.45);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #0d0f18 0%, #141720 50%, #1c2a28 100%);
+      color: #fff;
+      padding: 56px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      left: -30%;
+      width: 70%;
+      height: 90%;
+      background: radial-gradient(circle, rgba(127, 181, 160, 0.28) 0%, transparent 70%);
+      animation: pulse 18s infinite;
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      right: -20%;
+      width: 55%;
+      height: 80%;
+      background: radial-gradient(circle, rgba(212, 150, 122, 0.18) 0%, transparent 70%);
+      animation: pulse 22s infinite reverse;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.65rem, 4vw, 2.35rem);
+      font-weight: 500;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 1;
+      line-height: 1.25;
+      color: #e8e4de;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .tagline {
+      font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+      font-weight: 500;
+      color: #e8e4de;
+      opacity: 1;
+      position: relative;
+      z-index: 1;
+      max-width: 36em;
+      margin: 0 auto;
+      line-height: 1.55;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+    }
+
+    .content {
+      padding: 56px 40px;
+      background: var(--bg-page);
+    }
+
+    .section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: var(--primary-dark);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-weight: 500;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      color: #3d6b5c;
+      margin: 28px 0 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-weight: 700;
+    }
+
+    .icon {
+      font-size: 1.15em;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      max-width: 70ch;
+    }
+
+    .text-strong {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    .section--wide p {
+      max-width: none;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 28px;
+    }
+
+    .benefit-card {
+      background: linear-gradient(180deg, var(--surface) 0%, #eef5f1 100%);
+      padding: 28px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(13, 15, 24, 0.06);
+      border: 1px solid var(--border);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(13, 15, 24, 0.1);
+    }
+
+    .benefit-card h3 {
+      color: var(--primary-dark);
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .benefit-card p {
+      margin-bottom: 0;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 18px 0;
+    }
+
+    .feature-list.two-column {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 28px;
+    }
+
+    @media (max-width: 720px) {
+      .feature-list.two-column {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .feature-list li {
+      padding: 10px 0 10px 32px;
+      position: relative;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .feature-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--primary-mid);
+      font-weight: 800;
+      font-size: 1.15em;
+    }
+
+    ol.steps {
+      list-style: none;
+      margin: 18px 0;
+      counter-reset: step;
+    }
+
+    ol.steps li {
+      counter-increment: step;
+      padding: 12px 0 12px 42px;
+      position: relative;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    ol.steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      background: var(--primary-light);
+      color: #2f5a4a;
+      font-weight: 800;
+      font-size: 0.9rem;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+    }
+
+    .pillars {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 32px 0;
+      padding: 36px 24px;
+      background: var(--surface);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      gap: 24px;
+    }
+
+    .pillar {
+      text-align: center;
+      padding: 12px 16px;
+      flex: 1 1 140px;
+      max-width: 220px;
+    }
+
+    .pillar-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .pillar-desc {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      line-height: 1.45;
+    }
+
+    .pull-quote {
+      background: linear-gradient(135deg, #eef5f1 0%, #f7efe9 100%);
+      padding: 32px;
+      border-radius: 16px;
+      margin: 24px 0;
+      border-left: 5px solid var(--primary-mid);
+      font-style: italic;
+      color: var(--text-primary);
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.15rem;
+      line-height: 1.55;
+    }
+
+    .pull-quote-attribution {
+      margin-top: 18px;
+      font-size: 1rem;
+      font-style: normal;
+      font-family: 'Outfit', sans-serif;
+      color: #2f5a4a;
+      font-weight: 700;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, #0d0f18 0%, #1c2a28 100%);
+      color: #fff;
+      padding: 52px 40px;
+      text-align: center;
+      margin-top: 40px;
+      border-radius: 16px;
+    }
+
+    .cta-section h2 {
+      color: #e8e4de;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .cta-section p {
+      color: rgba(232, 228, 222, 0.9);
+      max-width: none;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 16px 36px;
+      background: var(--primary-mid);
+      color: var(--primary-dark);
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 1.05rem;
+      margin: 10px 8px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+      min-height: 48px;
+      line-height: 1.2;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.28);
+    }
+
+    .cta-button:focus-visible {
+      outline: 3px solid rgba(232, 228, 222, 0.95);
+      outline-offset: 3px;
+    }
+
+    .cta-button--secondary {
+      background: transparent;
+      color: #e8e4de;
+      border: 1.5px solid rgba(232, 228, 222, 0.35);
+    }
+
+    .cta-sub {
+      font-size: 1.1rem;
+      margin-bottom: 28px;
+    }
+
+    .cta-hint {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      opacity: 0.88;
+    }
+
+    .freemium-note {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 20px;
+    }
+
+    .freemium-note h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    .freemium-intro {
+      margin-bottom: 10px;
+    }
+
+    .freemium-table-wrap {
+      overflow-x: auto;
+      margin-top: 16px;
+      margin-bottom: 4px;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .plan-compare {
+      width: 100%;
+      min-width: 520px;
+      border-collapse: collapse;
+      font-size: 0.94rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: var(--surface);
+    }
+
+    .plan-compare caption {
+      caption-side: top;
+      text-align: left;
+      font-weight: 800;
+      color: var(--primary-dark);
+      font-size: 1rem;
+      padding: 0 0 12px 0;
+    }
+
+    .plan-compare thead th {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 800;
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .plan-compare tbody th {
+      background: linear-gradient(180deg, #fafbf9 0%, var(--surface) 100%);
+      color: var(--text-primary);
+      font-weight: 700;
+      text-align: left;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      width: 28%;
+      min-width: 140px;
+    }
+
+    .plan-compare td {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    .plan-compare tbody tr:nth-child(even) td {
+      background: rgba(127, 181, 160, 0.1);
+    }
+
+    .plan-compare .plan-cell-note {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.9em;
+      font-weight: 500;
+    }
+
+    .freemium-footer {
+      margin-top: 14px;
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      background: var(--primary-dark);
+      color: #fff;
+      padding: 36px 40px;
+      text-align: center;
+    }
+
+    .footer p {
+      color: rgba(232, 228, 222, 0.88);
+      margin: 10px 0;
+      max-width: none;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .footer a:focus-visible {
+      outline: 2px solid rgba(255, 255, 255, 0.95);
+      outline-offset: 3px;
+    }
+
+    .footer-brand {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .footer-legal-name {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .footer-contact {
+      margin-top: 20px;
+      font-size: 0.95rem;
+    }
+
+    .footer-legal {
+      margin-top: 12px;
+      font-size: 0.88rem;
+      opacity: 0.85;
+    }
+
+    .header-logo {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      border-radius: 18px;
+      display: block;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+      position: relative;
+      z-index: 1;
+      object-fit: cover;
+    }
+
+    .disclaimer {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .container {
+        box-shadow: none;
+      }
+      .benefit-card:hover,
+      .cta-button:hover {
+        transform: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        padding: 40px 20px;
+      }
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img
+        src="app-icon-legal.png"
+        alt="Panic Attack Relief Airu app icon"
+        class="header-logo"
+        width="80"
+        height="80"
+      >
+      <h1>Panic Attack Relief Airu</h1>
+      <p class="tagline">Breathe through anything. Deep breathing for anxiety — built for the moment it actually hits, not for when you’re already calm enough to browse a menu.</p>
+    </div>
+
+    <div class="content">
+      <div class="section section--wide">
+        <h2><span class="icon" aria-hidden="true">🌿</span> Why we built this</h2>
+        <p>Most breathing and meditation apps ask you to set up, browse, and configure <em>before</em> you can start — exactly when panic makes that impossible. <strong class="text-strong">Airu</strong> is a focused panic-attack relief tool for teens and young adults: it routes you to the right technique, starts fast, and keeps <strong class="text-strong">Emergency Mode</strong> free forever — even from the lock screen.</p>
+        <p>We care about <strong class="text-strong">relief in under a second</strong>, language that sounds like your life (exams, presentations, Sunday dread), and a pricing model that doesn’t punish people who need help most. No ads. Ever.</p>
+      </div>
+
+      <div class="section">
+        <h2><span class="icon" aria-hidden="true">✨</span> What you get at a glance</h2>
+        <div class="pillars">
+          <div class="pillar">
+            <span class="pillar-title">Emergency Mode</span>
+            <span class="pillar-desc">One tap from the lock screen or home card. Coherent Breathing starts immediately — no login, no paywall.</span>
+          </div>
+          <div class="pillar">
+            <span class="pillar-title">Anxiety-aware</span>
+            <span class="pillar-desc">Panic, social anxiety, and morning dread each map to the technique that fits that state — the app decides.</span>
+          </div>
+          <div class="pillar">
+            <span class="pillar-title">Built for teens</span>
+            <span class="pillar-desc">Scenarios for exams, presentations, arguments, and Sunday dread — not corporate wellness copy.</span>
+          </div>
+          <div class="pillar">
+            <span class="pillar-title">Pay what you can</span>
+            <span class="pillar-desc">Annual slider $9.99–$29.99 (Fair Value $19.99) or $2.99/mo. Emergency and Coherent stay free.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2><span class="icon" aria-hidden="true">💚</span> Core benefits</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <h3>⚡ Relief when you can’t browse</h3>
+            <p>Skip the menu spiral. Emergency Mode and in-app Coherent Breathing work offline, without an account, and without a subscription.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>🎯 The right technique, not a catalog</h3>
+            <p>Acute panic, social anxiety, and morning dread route to different patterns (4-7-8, box, coherent, and more) so you’re not guessing under stress.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>📱 Feels like your world</h3>
+            <p>Teen and young-adult scenarios — before an exam, about to present, after an argument, can’t sleep — each with a recommended session length and technique.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>🤲 Ethical pricing</h3>
+            <p>Choose a yearly price that feels fair. Lower tiers help teens who need access; higher tiers fund development. Apple Family Sharing on iOS.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>🔒 No ads in a crisis</h3>
+            <p>We will never show an ad while you’re mid-panic. Session data stays on your device by default; no selling your anxiety story.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2><span class="icon" aria-hidden="true">📱</span> Key features</h2>
+
+        <h3><span class="icon" aria-hidden="true">🆘</span> Emergency Mode</h3>
+        <ul class="feature-list two-column">
+          <li><strong>Lock screen widget</strong> (iOS WidgetKit / Android home widget) opens a session in under a second.</li>
+          <li><strong>Always Coherent Breathing</strong> — the forever-free technique, hardcoded for crisis moments.</li>
+          <li><strong>No auth, no paywall</strong> — works for guests and subscribers the same way.</li>
+          <li><strong>Works offline</strong> — no internet required to start breathing.</li>
+        </ul>
+
+        <h3><span class="icon" aria-hidden="true">🫁</span> Guided breathing session</h3>
+        <ul class="feature-list two-column">
+          <li><strong>Animated breathing circle</strong> with phase words and counters you can follow eyes-closed.</li>
+          <li><strong>Haptic guidance</strong> on phase changes and session complete (optional in Settings).</li>
+          <li><strong>1 / 3 / 5 minute</strong> durations for everyday sessions; Emergency starts immediately.</li>
+          <li><strong>Five techniques:</strong> 4-7-8, Physiological Sigh, Box, Coherent, and 4-4-6.</li>
+        </ul>
+
+        <h3><span class="icon" aria-hidden="true">🧭</span> Anxiety types &amp; home</h3>
+        <ul class="feature-list two-column">
+          <li><strong>Acute Panic / Social Anxiety / Morning Dread</strong> — quick chips and a dedicated selector.</li>
+          <li><strong>Recommended card</strong> based on your setup and habits (Coherent for guests).</li>
+          <li><strong>Streak visibility</strong> on Home so the habit stays visible without guilt trips.</li>
+          <li><strong>Learn tab</strong> — free modules and FAQ to understand techniques without a paywall.</li>
+        </ul>
+
+        <h3><span class="icon" aria-hidden="true">📝</span> Teen scenario library</h3>
+        <ul class="feature-list two-column">
+          <li><strong>Browse free</strong> — see exams, presentations, panic starting, Sunday dread, and more.</li>
+          <li><strong>Tap to breathe</strong> unlocks with subscription (Context Gate — fair pricing, not a surprise wall).</li>
+          <li><strong>Each scenario</strong> maps type, technique, and duration so you don’t configure under stress.</li>
+        </ul>
+
+        <h3><span class="icon" aria-hidden="true">📊</span> Progress, mood &amp; share</h3>
+        <ul class="feature-list two-column">
+          <li><strong>Streak, weekly sessions, mood trend, heatmap</strong> after you start logging sessions.</li>
+          <li><strong>Mood check-in</strong> after sessions (unlocks with subscription).</li>
+          <li><strong>Share a calm moment</strong> — optional post-session card for everyone; streak/milestone shares for subscribers.</li>
+          <li><strong>Guest progress</strong> stays local until you create an account and sync.</li>
+        </ul>
+
+        <h3><span class="icon" aria-hidden="true">🔐</span> Privacy &amp; trust</h3>
+        <ul class="feature-list two-column">
+          <li><strong>Dark, calm UI</strong> — designed to feel discreet, not like a loud wellness brand.</li>
+          <li><strong>Account optional</strong> — first session before we ask you to sign up.</li>
+          <li><strong>Secure auth</strong> when you want it (email, plus Apple on iOS / Google on Android).</li>
+          <li><strong>No ads, no data brokerage pitch</strong> — see our Privacy Policy for details.</li>
+        </ul>
+
+        <div class="freemium-note">
+          <h3>Free vs subscribed — in plain language</h3>
+          <p class="freemium-intro"><strong class="text-strong">Emergency Mode</strong>, <strong class="text-strong">Coherent Breathing</strong>, full onboarding (all five techniques while you set up), the <strong class="text-strong">Learn</strong> tab (six modules + FAQ), and browsing scenarios are free. A subscription unlocks the other techniques, scenario sessions, progress depth, mood check-in, and milestone sharing. Pricing is <strong class="text-strong">pay what you can</strong>: yearly from <strong class="text-strong">$9.99–$29.99</strong> (recommended Fair Value <strong class="text-strong">$19.99</strong>) or <strong class="text-strong">$2.99/month</strong>. Apple <strong class="text-strong">Family Sharing</strong> is supported on iOS; Google Play subscriptions are not shareable the same way.</p>
+          <div class="freemium-table-wrap">
+            <table class="plan-compare">
+              <caption>What’s included</caption>
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Guest (free)</th>
+                  <th scope="col">Subscribed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Emergency Mode</th>
+                  <td colspan="2">Always free — Coherent Breathing from widget or home</td>
+                </tr>
+                <tr>
+                  <th scope="row">Coherent Breathing (in-app)</th>
+                  <td colspan="2">Always free</td>
+                </tr>
+                <tr>
+                  <th scope="row">Onboarding</th>
+                  <td colspan="2">All 5 techniques while setting up</td>
+                </tr>
+                <tr>
+                  <th scope="row">Learn modules</th>
+                  <td colspan="2">Always free — 6 short reads + FAQ (no paywall)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Other techniques (4-7-8, sigh, box, 4-4-6)</th>
+                  <td>Locked — open pricing when you tap</td>
+                  <td>Unlocked</td>
+                </tr>
+                <tr>
+                  <th scope="row">Scenario library</th>
+                  <td>Browse free; session needs a plan</td>
+                  <td>Tap → start session</td>
+                </tr>
+                <tr>
+                  <th scope="row">Progress &amp; streak charts</th>
+                  <td>Empty if no sessions; habit gate after you start</td>
+                  <td>Full charts + milestone share</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mood check-in</th>
+                  <td>Opens pricing</td>
+                  <td>Available after sessions</td>
+                </tr>
+                <tr>
+                  <th scope="row">Share session complete</th>
+                  <td colspan="2">Available after onboarding</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ads</th>
+                  <td colspan="2">Never</td>
+                </tr>
+                <tr>
+                  <th scope="row">Pricing</th>
+                  <td>—</td>
+                  <td>$9.99–$29.99/yr or $2.99/mo <span class="plan-cell-note">Cancel anytime. Family Sharing on iOS.</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="freemium-footer">We never put a paywall in front of Emergency Mode. Store prices may vary by region; see the in-app subscription screen or store listing for current offers.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2><span class="icon" aria-hidden="true">💬</span> In plain words</h2>
+        <div class="pull-quote">
+          “No one should pay to survive a panic attack. Emergency Mode stays free — pay what feels fair for everything else.”
+          <p class="pull-quote-attribution">Panic Attack Relief Airu</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2><span class="icon" aria-hidden="true">🎯</span> Perfect for</h2>
+        <ul class="feature-list two-column">
+          <li><strong>Teens (14–17)</strong> dealing with test anxiety, social pressure, or sudden panic.</li>
+          <li><strong>Young adults (18–24)</strong> who find Calm/Headspace too slow or too expensive when anxiety hits.</li>
+          <li><strong>Anyone mid-spiral</strong> who needs one tap from the lock screen — not a meditation library.</li>
+          <li><strong>People who hate ads in wellness apps</strong> and want pay-what-you-can instead of a hard wall.</li>
+          <li><strong>Families on iOS</strong> who want to share a subscription via Apple Family Sharing.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2><span class="icon" aria-hidden="true">🚀</span> Getting started</h2>
+        <ol class="steps">
+          <li><strong>Download Panic Attack Relief Airu</strong> from the <strong>App Store</strong> or <strong>Google Play</strong> (or start from <a href="https://www.calmingaura.net/">calmingaura.net</a>).</li>
+          <li><strong>Start breathing</strong> — setup is optional; you’re in a session in two taps.</li>
+          <li><strong>Add Emergency Mode</strong> to your lock screen / home screen when you’re ready.</li>
+          <li><strong>Create an account</strong> after your first session if you want streaks and sync (or continue as a guest).</li>
+          <li><strong>Unlock more</strong> only when you want specialized techniques, scenarios, or progress — choose a yearly price that feels fair.</li>
+        </ol>
+        <p class="disclaimer">Airu doesn’t replace therapy or clinical care. If you’re experiencing ongoing anxiety or a mental health crisis, please speak with a healthcare professional or local emergency services.</p>
+      </div>
+
+      <div class="cta-section">
+        <h2>Breathe when it actually hits</h2>
+        <p class="cta-sub">Same app for iPhone and Android. Emergency Mode always free.</p>
+        <a class="cta-button cta-button--secondary" href="https://apps.apple.com/app/id6777837974" rel="noopener noreferrer" target="_blank">App Store</a>
+        <a class="cta-button" href="https://play.google.com/store/apps/details?id=com.contact.calmingaura.airu" rel="noopener noreferrer" target="_blank">Google Play</a>
+        <p class="cta-hint">If a store link moves, search for <strong>Panic Attack Relief Airu</strong> or use <a href="https://www.calmingaura.net/" style="color: inherit; font-weight: 800;">calmingaura.net</a>.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p class="footer-brand">Panic Attack Relief Airu</p>
+      <p class="footer-legal-name">Official app name: <strong>Panic Attack Relief Airu</strong> (same in the app, on the stores, and in our policies).</p>
+      <p>Deep breathing for anxiety. Built for the moment it actually hits.</p>
+      <p class="footer-contact">Contact: <a href="mailto:support@calmingaura.net">support@calmingaura.net</a></p>
+      <p class="footer-legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        ·
+        <a href="terms-of-service.html">Terms of Service</a>
+      </p>
+      <p class="footer-legal">© 2026 Calming Aura Studios LLC. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
