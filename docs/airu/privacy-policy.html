@@ -172,13 +172,14 @@
         <li><strong>Payment details:</strong> Purchases are processed by <strong>Apple</strong> (App Store) or <strong>Google</strong> (Google Play). We do <strong>not</strong> receive or store your full payment card number. Those platforms share limited purchase or entitlement information with us as required to operate subscriptions.</li>
       </ul>
 
-      <h3>2.5 Device, technical, and local preferences</h3>
+      <h3>2.5 Device, technical, local preferences, and analytics</h3>
       <ul>
         <li>Device type, operating system, and app version as needed for support and compatibility.</li>
         <li>Local preferences such as haptics settings and onboarding completion flags stored on your device.</li>
         <li><strong>Local notifications:</strong> If you enable reminders, scheduling is handled on your device. We do not use push notification providers to send marketing campaigns based on those reminders.</li>
+        <li><strong>Usage analytics (Android):</strong> On Android builds, we use <strong>Google Firebase Analytics</strong> (Google Analytics for Firebase) to understand app usage in aggregate — for example installs, sessions, screen views, and whether users open the paywall or complete a subscription. Events are designed to avoid collecting email addresses, names, or other direct contact identifiers as event parameters. Analytics is <strong>not</strong> currently enabled in the iOS build of the App.</li>
       </ul>
-      <p>We do <strong>not</strong> currently use third-party advertising SDKs or sell personal information for advertising. If that changes, we will update this policy.</p>
+      <p>We do <strong>not</strong> use third-party advertising SDKs or sell personal information for advertising. If that changes, we will update this policy.</p>
 
       <h3>2.6 Communications</h3>
       <ul>
@@ -193,7 +194,7 @@
       <h2>3. How we use your information</h2>
       <p>We use information to:</p>
       <ul>
-        <li>Provide, operate, and improve the App (sessions, progress, scenarios, Emergency Mode, and related features).</li>
+        <li>Provide, operate, and improve the App (sessions, progress, scenarios, Emergency Mode, and related features), including understanding product usage via analytics on Android.</li>
         <li>Create and secure your account, and authenticate you.</li>
         <li>Verify and restore subscriptions and unlock paid features.</li>
         <li>Sync guest session data after you create an account (when applicable).</li>
@@ -214,7 +215,7 @@
         <tbody>
           <tr><td><strong>Supabase</strong></td><td>Authentication, database (profiles, sessions, subscriptions), and related backend services</td></tr>
           <tr><td><strong>Apple</strong></td><td>Sign in with Apple; App Store billing and entitlements</td></tr>
-          <tr><td><strong>Google</strong></td><td>Google Sign-In (where offered); Google Play billing and entitlements</td></tr>
+          <tr><td><strong>Google</strong></td><td>Google Sign-In (where offered); Google Play billing and entitlements; <strong>Firebase Analytics</strong> on Android (usage analytics)</td></tr>
         </tbody>
       </table>
       <p>These providers process data under their own terms and privacy policies, as needed to operate the App.</p>
