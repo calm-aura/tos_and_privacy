@@ -150,14 +150,16 @@
     </header>
     <main>
       <div class="meta">
-        <div><strong>Last updated:</strong> September 5, 2026</div>
+        <div><strong>Last updated:</strong> September 6, 2026</div>
         <div><strong>Operator:</strong> Calming Aura Studios LLC</div>
         <div><strong>Contact:</strong> <a href="mailto:support@calmingaura.net">support@calmingaura.net</a></div>
       </div>
 
       <div class="trust">
         <strong>Privacy-first design:</strong> Core symptom and cycle data is stored
-        <strong>on your device</strong> by default (encrypted local storage). We do
+        <strong>on your device</strong> by default (encrypted local storage). Premium
+        AI summaries send only a <strong>minimal structured snapshot</strong> you
+        request to generate a summary. We do
         <strong>not</strong> use advertising SDKs. We do
         <strong>not</strong> sell your personal information.
       </div>
@@ -230,10 +232,35 @@
         <li>We do <strong>not</strong> require a weight or BMI question to start using the App.</li>
       </ul>
 
+      <h3>2.6 Premium AI summaries (when you request them)</h3>
+      <p>
+        If you subscribe to Premium and choose to generate a
+        <strong>weekly</strong> or <strong>monthly AI summary</strong>, the App
+        sends a <strong>limited structured snapshot</strong> of recent logs you
+        already entered (for example dates, symptom labels, severity or flow
+        details when present, energy, and optional meal notes). For a monthly
+        summary, the App may also include short text from up to a few of your
+        recent weekly summaries stored on your device.
+      </p>
+      <p>
+        That snapshot is sent over an encrypted connection to our backend
+        (currently <strong>Supabase</strong> Edge Functions) and then to
+        <strong>Google</strong> (Gemini API) solely to generate the summary you
+        requested. We configure paid API access for this processing. We do
+        <strong>not</strong> use your health content for advertising.
+      </p>
+      <p>
+        Generated summaries are returned to the App and stored
+        <strong>on your device</strong> (you may delete them in the App). Free
+        logging does <strong>not</strong> require sending your logs to these AI
+        services.
+      </p>
+
       <h2>3. How we use your information</h2>
       <p>We use information to:</p>
       <ul>
         <li>Provide App features you choose (logging, history, prep, measurements, exports you generate)</li>
+        <li>Generate Premium weekly or monthly AI summaries when you request them</li>
         <li>Unlock and maintain Premium entitlement when you subscribe</li>
         <li>Operate optional account and sync features when you opt in</li>
         <li>Respond to support requests you send us</li>
@@ -247,8 +274,9 @@
       <ul>
         <li>
           <strong>Service providers</strong> that help us operate the App when a feature requires them
-          (for example Apple or Google for in-app purchases; a backend provider such as Supabase
-          <strong>only if</strong> you use optional account/sync features).
+          (for example Apple or Google for in-app purchases; Supabase and Google Gemini
+          when you request a Premium AI summary; a backend provider such as Supabase
+          for optional account/sync features if you enable them).
         </li>
         <li>
           <strong>Exports you create:</strong> If you generate and share a summary (for example PDF or CSV)
@@ -269,6 +297,8 @@
         Local App data is stored on your device using <strong>encrypted storage</strong>.
         Optional synced data (if you enable account/sync) may be transmitted and stored with our service providers
         using industry-standard protections such as encryption in transit.
+        When you request a Premium AI summary, the limited snapshot described above is transmitted
+        using encryption in transit to generate the summary and is not used to build advertising profiles.
       </p>
       <p>
         No method of storage or transmission is 100% secure. We work to protect your information,
@@ -279,12 +309,15 @@
       <ul>
         <li><strong>Access and correction:</strong> You can view and edit much of your data in the App.</li>
         <li>
-          <strong>Deletion:</strong> You may delete logs or entries in the App where available, and you may request
+          <strong>Deletion:</strong> You may delete logs, entries, or AI summaries in the App where available, and you may request
           deletion of account-related data by contacting us. If we provide an in-app “Delete my data” control,
           use that for a local wipe. Platform backups or store receipts may remain with Apple or Google under their policies.
         </li>
         <li><strong>Export:</strong> Where available, you may export summaries you choose to generate.</li>
-        <li><strong>Optional features:</strong> You can decline account creation and still use free logging features.</li>
+        <li>
+          <strong>Optional features:</strong> You can decline account creation and still use free logging features.
+          You can also decline Premium AI summaries; free logging does not require AI processing.
+        </li>
       </ul>
       <p>
         Depending on where you live (for example under CCPA or GDPR), you may have additional rights.
@@ -301,16 +334,19 @@
 
       <h2>8. Data retention</h2>
       <p>
-        Local data remains on your device until you delete it, clear app data, or uninstall the App
-        (subject to your device and backups).
+        Local data (including AI summaries saved in the App) remains on your device until you delete it,
+        clear app data, or uninstall the App (subject to your device and backups).
         Account or synced data, if any, is retained while your account is active and as needed to provide the service,
         then deleted or anonymized within a reasonable period after deletion requests, except where law requires longer retention.
+        Transient processing needed to generate an AI summary is retained by providers only as needed to operate that request
+        under their applicable terms and retention practices.
       </p>
 
       <h2>9. International transfers</h2>
       <p>
-        If you use optional cloud features, your information may be processed in the United States or other countries
-        where we or our providers operate. Where required, we use appropriate safeguards.
+        If you use optional cloud features or Premium AI summaries, your information may be processed in the United States
+        or other countries where we or our providers (including Supabase and Google) operate.
+        Where required, we use appropriate safeguards.
       </p>
 
       <h2>10. Third-party links and services</h2>
